@@ -1,7 +1,7 @@
 # AutomaticPivotDetector_CMP197
-A computer vision program developed to find and analyze irrigation pivot with multiespectral satellite imagery.\
-Final project for the master's course of Computer Vision (CMP197) for the semester of 2021/2 at UFRGS, Brazil.\
-Author: Fabio Ugalde Pereira\\
+A computer vision program developed to find and analyze irrigation pivot with multiespectral satellite imagery. \
+Final project for the master's course of Computer Vision (CMP197) for the semester of 2021/2 at UFRGS, Brazil. \
+Author: Fabio Ugalde Pereira \\
 
 This project had as its main goal the automatic identification of circular or partially circular patterns created by central irrigation patterns. This project can be used to quickly estimate statistics for agricultural land use, water use and geomorphological analysis. Also, given a sufficiently small periodic sattelite revisit time, this can also aid farmers in monitoring their crops for data such as status of growth, ratio of good plants, temporal crop evolution, etc.\
 
