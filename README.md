@@ -1,5 +1,5 @@
 # AutomaticPivotDetector_CMP197
-A computer vision program developed to find and analyze irrigation pivot with multiespectral satellite imagery. \
+A computer vision program developed to find and analyze irrigation pivot with multiespectral satellite imagery. <br />
 Final project for the master's course of Computer Vision (CMP197) for the semester of 2021/2 at UFRGS, Brazil. \
 Author: Fabio Ugalde Pereira \
 
