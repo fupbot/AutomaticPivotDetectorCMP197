@@ -15,11 +15,12 @@ The code is structured in the following manner: <br />
 1 - The user must define a shapefile of the ROI in a third-party software such as Google Earth or QGIS. This shapefile (.shx or .shp) is used to crop the Sentinel image down to only the desired region. <br />
 
 ![descr_prob](https://user-images.githubusercontent.com/85031646/172698478-484903ea-2029-4b8f-bac2-e9e5c50ae56d.png)
-
+Fig 1: Areas of Interest (Yuma and Maricopa, AZ)
 
 2 - The code generates a vegetation index called 'NDVI' (Normalized Difference Vegetation Index). This calculates the normalized difference between the near-infrared and red channels of the image, and it highlights pixels that contain photosynthetically active vegetation. This highlights areas that are cultivated and it presents a limitation of this application, which can only detect pivots after a certain level of vegetation development. <br />
 
 ![comp_ndvi_bin](https://user-images.githubusercontent.com/85031646/172698343-125eb9ad-a6e4-42d6-9430-96a13433df4d.png)
+Fig 2: RGB, NDVI and Binarized Image
 
 3 - The NDVI image is binarized with OTSU's method. This step, applied on the NDVI image, makes soil pixels black (0) and vegetation pixels white (1). <br />
 4 - In order to extract circular features, the Circular Hough Transform method of OpenCV is applied. This function has many parameters and poses an issue: if these parameters are too tight, the function misses some pivots (high false-negative rate); if these parameters are too loose, too many false-positives are found. <br />
@@ -28,4 +29,4 @@ The code is structured in the following manner: <br />
 7 - The global and individual statistics are overlaid on the RGB image and the results are shown as the images below. <br />
 
 ![final](https://user-images.githubusercontent.com/85031646/172697468-1e4e11ec-02d8-4511-b8da-ae67f804cdd8.png)
-
+Fig 3: Final results with pivots identified and analyzed
