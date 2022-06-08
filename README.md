@@ -1,16 +1,16 @@
 # AutomaticPivotDetector_CMP197
-A computer vision program developed to find and analyze irrigation pivot with multiespectral satellite imagery. <br />
-Final project for the master's course of Computer Vision (CMP197) for the semester of 2021/2 at UFRGS, Brazil. <br />
-Author: Fabio Ugalde Pereira <br />
+#### A computer vision program developed to find and analyze irrigation pivot with multiespectral satellite imagery. <br />
+#### Final project for the master's course of Computer Vision (CMP197) for the semester of 2021/2 at UFRGS, Brazil. <br />
+#### Author: Fabio Ugalde Pereira <br />
 
 This project had as its main goal the automatic identification of circular or partially circular patterns created by central irrigation patterns. This project can be used to quickly estimate statistics for agricultural land use, water use and geomorphological analysis. Also, given a sufficiently small periodic sattelite revisit time, this can also aid farmers in monitoring their crops for data such as status of growth, ratio of good plants, temporal crop evolution, etc. <br />
 
 The project was developed in Python 3 using the GDAL package for image processing activities, OpenCV for image manipulation and Scikit-Learn, Numpy and Pandas for data and machine learning. <br />
 
 
-DATA: The sattelite images of the region of interest (ROI) is gathered from the open database of Sentinel 2 Mission of the European Space Agency. <br /> 
+**DATA:** The sattelite images of the region of interest (ROI) is gathered from the open database of Sentinel 2 Mission of the European Space Agency. <br /> 
 
-WORKFLOW: <br />
+**WORKFLOW:** <br />
 The code is structured in the following manner: <br />
 1 - The user must define a shapefile of the ROI in a third-party software such as Google Earth or QGIS. This shapefile (.shx or .shp) is used to crop the Sentinel image down to only the desired region. <br />
 2 - The code generates a vegetation index called 'NDVI' (Normalized Difference Vegetation Index). This calculates the normalized difference between the near-infrared and red channels of the image, and it highlights pixels that contain photosynthetically active vegetation. This highlights areas that are cultivated and it presents a limitation of this application, which can only detect pivots after a certain level of vegetation development. <br />
