@@ -29,4 +29,6 @@ Fig 2: RGB, NDVI and Binarized Image
 7 - The global and individual statistics are overlaid on the RGB image and the results are shown as the images below. <br />
 
 ![final](https://user-images.githubusercontent.com/85031646/172697468-1e4e11ec-02d8-4511-b8da-ae67f804cdd8.png)
-Fig 3: Final results with pivots identified and analyzed
+Fig 3: Final results with pivots identified and analyzed <br />
+
+The training set had 56 pivots images and 76 non-pivots images. This dataset along with the Random Forests algorithm were able to provide good results as seen on Fig 3, however it is noticeable that a couple of "half-pivot" (less than 75% of a full circle) were not detected. This issue can be addressed in a future version.
